@@ -9,6 +9,7 @@
   padding: 20px 80px;
   border-radius: 12px;
   background-color: $white;
+  max-width: 400px;
   h2 {
     color: #000;
   }
@@ -23,12 +24,12 @@
       border-color: $error;
     }
     .errorMessage {
-      display: none;
-      visibility: hidden;
+      text-align: left;
+      color: $error;
     }
   }
   input {
-    margin: 20px 0;
+    margin: 20px 0 5px;
     border: none;
     border-bottom: 1px solid black;
   }
