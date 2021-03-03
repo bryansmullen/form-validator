@@ -1,26 +1,31 @@
+import styles from '../styles/Form.module.scss';
+
 const Form = () => (
-  <form>
+  <form className={styles.form}>
     <h2>Register with us</h2>
     <div className="form-control">
-      {/* Username */}
-      <label htmlFor="username" />
-      <input type="text" id="username" placeholder="Enter username" />
-      <small>Error message</small>
-
+      <fieldset>
+        {/* Username */}
+        <input type="text" id="username" placeholder="User Name" />
+        <small className={styles.errorMessage}>Error message</small>
+      </fieldset>
       {/* Email */}
-      <label htmlFor="email" />
-      <input type="email" id="email" placeholder="Enter email" />
-      <small>Error message</small>
+      <fieldset>
+        <input type="email" id="email" placeholder="Email" />
+        <small className={styles.errorMessage}>Error message</small>
+      </fieldset>
 
       {/* Password */}
-      <label htmlFor="password" />
-      <input type="password" id="password" placeholder="Enter password" />
-      <small>Error message</small>
+      <fieldset>
+        <input type="password" id="password" placeholder="Password" />
+        <small className={styles.errorMessage}>Error message</small>
+      </fieldset>
 
       {/* Confirm Password */}
-      <label htmlFor="password2" />
-      <input type="password" id="password2" placeholder="Confirm password" />
-      <small>Error message</small>
+      <fieldset>
+        <input type="password" id="password2" placeholder="Confirm Password" />
+        <small className={styles.errorMessage}>Error message</small>
+      </fieldset>
 
       {/* Submit Button */}
       <button type="submit">Submit</button>
